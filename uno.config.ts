@@ -1,0 +1,10 @@
+// uno.config.ts
+import { defineConfig, presetAttributify, presetUno,presetIcons } from 'unocss'
+
+export default defineConfig({
+  presets: [
+    presetAttributify({ }),
+    presetUno(),
+    presetIcons({ }), // unocss icons
+  ],
+})
