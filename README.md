@@ -3,5 +3,8 @@
 
 + Vue3
 + TypeScript
++ Vue Router
++ Pinia
 + PrimeVue
 + UnoCSS
++ Sass
