@@ -8,3 +8,6 @@
 + PrimeVue
 + UnoCSS
 + Sass
++ CSS Icon
+  + PrimeIcons
+  + UnoCSS Icons
