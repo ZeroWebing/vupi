@@ -17,6 +17,9 @@ import 'primeicons/primeicons.css'
 // UnoCSS
 import "uno.css"
 
+import { MotionPlugin } from '@vueuse/motion'
+
+
 // Create and mount app
 const app = createApp(App)
 
@@ -24,4 +27,5 @@ app
   .use(router)
   .use(store)
   .use(PrimeVue, { theme: { preset: MyPreset } })
+  .use(MotionPlugin)
   .mount('#app')
