@@ -1,5 +1,5 @@
 <template>
-  <component :is="as" ref="refElement" :class="cn('w-fit transition duration-500 ease-in-out', $props.class)">
+  <component :is="as" ref="refElement" :class="cn('w-fit transition duration-500 ease-in-out', props.class)">
     <slot />
   </component>
 </template>

@@ -3,7 +3,7 @@
     <div ref="containerRef" @mouseenter="handleMouseEnter" @mousemove="handleMouseMove" @mouseleave="handleMouseLeave"
       :class="[
         'flex items-center justify-center relative transition-all duration-200 ease-linear',
-        $props.class,
+        customClass,
       ]" style="transform-style: preserve-3d">
       <slot />
     </div>
@@ -14,7 +14,7 @@
 import { useMouseState } from "@/composables/useMouseState";
 import { provide, ref } from "vue";
 
-const props = defineProps({
+const { class: customClass, containerClass } = defineProps({
   class: String,
   containerClass: String,
 });

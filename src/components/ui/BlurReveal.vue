@@ -1,5 +1,5 @@
 <template>
-    <div ref="container" :class="class">
+    <div ref="container" :class="props.class">
         <div v-for="(child, index) in children" :key="index" v-motion ref="childElements" :initial="getInitial()"
             :enter="getEnter(index)">
             <component :is="child" />
