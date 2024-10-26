@@ -25,26 +25,38 @@ export default defineConfig({
         skipWaiting: true
       },
       manifest: {
-        name: 'My App',
-        short_name: 'App',
-        theme_color: '#42b983',
+        name: 'vupi',
+        short_name: 'vupi',
+        theme_color: '#FFFFFF',
         icons: [
           {
             src: 'icon.svg',
-            sizes: '200x200',
+            sizes: '32x32',
             type: 'image/svg+xml',
             purpose: "any"
           },
           {
             src: 'icon.png',
-            sizes: '200x200',
+            sizes: '512x512',
             type: 'image/png',
             purpose: "any"
           },
         ],
         screenshots: [
           {
-            src: 'screenshot-desktop.webp', // 用于桌面设备
+            src: 'screenshot-desktop_1.webp', // 用于桌面设备
+            sizes: '1920x1080',
+            type: 'image/webp',
+            form_factor: 'wide',
+          },
+          {
+            src: 'screenshot-desktop_2.webp', // 用于桌面设备
+            sizes: '1920x1080',
+            type: 'image/webp',
+            form_factor: 'wide',
+          },
+          {
+            src: 'screenshot-desktop_1.webp', // 用于桌面设备
             sizes: '1920x1080',
             type: 'image/webp',
             form_factor: 'wide',
