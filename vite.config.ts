@@ -4,7 +4,6 @@ import path from 'node:path'
 
 /** pwa */
 import { VitePWA } from 'vite-plugin-pwa'
-
 /** primeVue */
 import Components from 'unplugin-vue-components/vite'
 import { PrimeVueResolver } from '@primevue/auto-import-resolver'
@@ -27,6 +26,7 @@ export default defineConfig({
       manifest: {
         name: 'vupi',
         short_name: 'vupi',
+        description: 'Template: Vue3 + UnoCSS + Primevue + InspiaUI',
         theme_color: '#FFFFFF',
         icons: [
           {
